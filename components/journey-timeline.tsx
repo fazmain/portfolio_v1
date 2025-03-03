@@ -57,7 +57,7 @@ export function JourneyTimeline() {
           className="relative md:grid md:grid-cols-[120px_1fr] md:gap-8"
         >
           {/* Timeline Dot */}
-          <div className="absolute w-4 h-4 bg-purple-500 rounded-full left-[-10px] md:left-[116px] top-2 z-10 ring-4 ring-purple-500/20" />
+          {/* <div className="absolute w-4 h-4 bg-purple-500 rounded-full left-[-10px] md:left-[116px] top-2 z-10 ring-4 ring-purple-500/20" /> */}
 
           {/* Date */}
           <div className={`${GeistMono.className} text-[#ff7b4d] mb-4 md:mb-0 md:text-right relative z-10`}>

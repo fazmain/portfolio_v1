@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import Masonry from "react-masonry-css"
 
+
 const projects = [
   {
     title: "AI-Powered Chatbot",

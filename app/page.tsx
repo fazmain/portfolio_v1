@@ -13,65 +13,68 @@ import { GeistMono } from "geist/font/mono";
 import { TypewriterEffect } from "@/components/typewriter-effect";
 import { ViewCounter } from "@/components/view-counter";
 
+
+import Avatar3D from "@/components/Avatar3D";
+
 export default function Home() {
   const words = [
     "make stuff",
     "play badminton",
     "watch 'the office'",
-    "create experiences",
-    "innovate solutions",
+    "ship MVS"
   ];
 
   return (
     <div className="min-h-screen pt-24">
       <Navigation />
 
-      <main className="container mx-auto px-8 md:px-8 lg:px-40 space-y-32">
+      <main className="container mx-auto px-8 md:px-8 lg:px-44 space-y-32">
         {/* Hero Section */}
-        <div className="space-y-4 max-w-2xl">
-          <h1 className="text-5xl leading-tight">
-            Hi, 👋🏽 i am faiaz. software
-            <br />
-            developer , loves to
-            <br />
-            <span>
-              <TypewriterEffect words={words} />
-            </span>
-          </h1>
+        <div className="flex flex-col-reverse lg:flex-row gap-8 items-center lg:border-b-2">
+          <div className="space-y-4 max-w-2xl text-left">
+            <h1 className={`${GeistMono.className} text-4xl lg:text-5xl leading-tight`}>
+              Hi,👋🏽 i am <span className="bg-gradient-to-r from-blue-500 to-purple-500">Faiaz.</span> Software
+              <br />
+              developer,loves to
+              <br />
+              <span>
+                <TypewriterEffect words={words} />
+              </span>
+            </h1>
 
-          <div className="flex gap-4 pt-8">
-            <Link
-              href="https://github.com"
-              target="_blank"
+            <div className="flex gap-4 pt-8 justify-start">
+              <Link href="https://github.com/fazmain" target="_blank">
+                <Github size={28} strokeWidth={1} />
+              </Link>
+              <Link href="https://www.linkedin.com/in/faiazmain/" target="_blank">
+                <Linkedin size={28} strokeWidth={1} />
+              </Link>
+              <ViewCounter />
+            </div>
 
-            >
-              <Github size={28} strokeWidth={1} />
-            </Link>
-            <Link
-              href="https://linkedin.com"
-              target="_blank"
-              // className="text-emerald-400 hover:text-emerald-300 transition-colors"
-            >
-              <Linkedin size={28} strokeWidth={1} />
-            </Link>
-            <ViewCounter />
+            {/* Chat Interface */}
+            {/* <div className="mt-12 max-w-2xl">
+              <ChatInterface />
+              <div className="mt-4 space-y-2 text-zinc-400">
+                <p>What are your life goals?</p>
+                <p>What is something that you are proud of?</p>
+              </div>
+            </div> */}
           </div>
 
-          {/* Chat Interface */}
-          {/* <div className="mt-12 max-w-2xl">
-            <ChatInterface />
-            <div className="mt-4 space-y-2 text-zinc-400">
-              <p>What are your life goals?</p>
-              <p>What is something that you are proud of?</p>
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <div className="w-[300px] lg:w-full">
+              <Avatar3D />
             </div>
-          </div> */}
+          </div>
         </div>
 
         {/* Projects Section */}
-        <div className="space-y-12">
-          <h2 className="text-2xl font-bold"> ~ work I am proud of</h2>
+        {/* <div className="space-y-12">
+        <h2 className={`${GeistMono.className} text-2xl font-bold`}> ~ my work</h2>
+
           <Projects />
-        </div>
+        </div> */}
 
         {/* Experience Section */}
         <FadeIn className="px-8">
@@ -79,20 +82,20 @@ export default function Home() {
         </FadeIn>
 
         {/* Blog Section */}
-        <FadeIn className="space-y-8">
+        {/* <FadeIn className="space-y-8">
           <h2 className={`${GeistMono.className} text-2xl font-bold`}>
-            //latest posts
+            ~ latest posts
           </h2>
           <Blog />
         </FadeIn>
 
         {/* Skills Section */}
-        <FadeIn className="space-y-8">
+        {/* <FadeIn className="space-y-8">
           <h2 className={`${GeistMono.className} text-2xl font-bold`}>
-            //my skills
+            ~ my skills
           </h2>
           <Skills />
-        </FadeIn>
+        </FadeIn>  */}
       </main>
     </div>
   );
