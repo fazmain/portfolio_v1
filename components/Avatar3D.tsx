@@ -178,10 +178,12 @@ export default function Avatar3D() {
       const getRandomModel = () => {
         // Array of available model paths
         const modelOptions = [
-          "/model.glb",
-          "/model_2.glb",
-          "/model_3.glb", 
-          "/model_4.glb"
+          "/model (11).glb",
+          "/model (12).glb",
+          "/model (13).glb",
+          "/model (14).glb",
+          "/model (15).glb",
+          "/model (16).glb",
         ];
         
         // Generate random index

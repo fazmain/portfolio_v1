@@ -53,14 +53,14 @@ export function Timeline() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="relative pl-8 pr-4 md:grid md:grid-cols-[120px_1fr] md:gap-8"
+            className="relative pl-4 pr-2 md:grid md:grid-cols-[120px_1fr] md:gap-8"
           >
             {/* Timeline Dot */}
             {/* <div className="absolute w-4 h-4 bg-blue-500 rounded-full left-[-9px] top-2 ring-4 ring-blue-500/20 md:top-1" /> */}
 
             {/* Date */}
             <div
-              className={`${GeistMono.className} text-[#ff7b4d] mb-4 md:mb-0 md:text-right`}
+              className={`${GeistMono.className} text-blue-400 mb-4 md:mb-0 md:text-right`}
             >
               {exp.startDate}
               <br />—<br />
@@ -99,7 +99,7 @@ export function Timeline() {
                 {exp.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-4 py-1 rounded-full bg-purple-500/20 text-purple-300 shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-500/20"
+                    className="px-4 py-1 rounded-full bg-violet-600/30 text-purple-300 shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-500/20"
                   >
                     {tag}
                   </span>

@@ -13,7 +13,6 @@ import { GeistMono } from "geist/font/mono";
 import { TypewriterEffect } from "@/components/typewriter-effect";
 import { ViewCounter } from "@/components/view-counter";
 
-
 import Avatar3D from "@/components/Avatar3D";
 
 export default function Home() {
@@ -21,21 +20,29 @@ export default function Home() {
     "make stuff",
     "play badminton",
     "watch 'the office'",
-    "ship MVS"
+    "ship MVS",
   ];
 
   return (
-    <div className="min-h-screen pt-24">
+    <div className="min-h-screen pt-20 lg:pt-32">
       <Navigation />
 
-      <main className="container mx-auto px-8 md:px-8 lg:px-44 space-y-32">
+      <main className="container mx-auto px-8 md:px-8 lg:px-[15vw] space-y-24">
         {/* Hero Section */}
         <div className="flex flex-col-reverse lg:flex-row gap-8 items-center lg:border-b-2">
           <div className="space-y-4 max-w-2xl text-left">
-            <h1 className={`${GeistMono.className} text-4xl lg:text-5xl leading-tight`}>
-              Hi,👋🏽 i am <span className="bg-gradient-to-r from-blue-500 to-purple-500">Faiaz.</span> Software
+            <h1
+              className={`${GeistMono.className} text-4xl lg:text-5xl leading-tight`}
+            >
+              Hi,👋🏽 i am{" "}
+              <span className="bg-gradient-to-r from-blue-600 to-violet-600">
+                Faiaz.
+              </span>{" "}
+              Software
               <br />
-              developer,loves to
+              developer,loves
+              <br />
+              to
               <br />
               <span>
                 <TypewriterEffect words={words} />
@@ -46,7 +53,10 @@ export default function Home() {
               <Link href="https://github.com/fazmain" target="_blank">
                 <Github size={28} strokeWidth={1} />
               </Link>
-              <Link href="https://www.linkedin.com/in/faiazmain/" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/faiazmain/"
+                target="_blank"
+              >
                 <Linkedin size={28} strokeWidth={1} />
               </Link>
               <ViewCounter />
@@ -70,14 +80,14 @@ export default function Home() {
         </div>
 
         {/* Projects Section */}
-        {/* <div className="space-y-12">
+        <div className="space-y-12">
         <h2 className={`${GeistMono.className} text-2xl font-bold`}> ~ my work</h2>
 
           <Projects />
-        </div> */}
+        </div>
 
         {/* Experience Section */}
-        <FadeIn className="px-8">
+        <FadeIn>
           <Timeline />
         </FadeIn>
 
