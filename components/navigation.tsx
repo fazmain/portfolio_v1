@@ -21,6 +21,12 @@ export function Navigation() {
           >
             the journey
           </Link>
+          <Link
+            href="/blog"
+            className="hover:text-zinc-400 transition-colors"
+          >
+            blog
+          </Link>
           {/* <Link
             href="/projects"
             className="hover:text-zinc-400 transition-colors"

@@ -26,7 +26,7 @@ export function Footer() {
               <Linkedin size={20} />
             </Link>
           </div>
-          <p className="text-zinc-400 text-sm"> Last Updated: March 3, 2025</p>
+          <p className="text-zinc-400 text-sm"> Last Updated: September 30, 2025</p>
           <p className="text-zinc-400 text-sm">© {currentYear} Faiaz Azmain</p>
         </div>
       </div>

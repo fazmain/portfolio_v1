@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #000000;
     --foreground: 0 0% 3.9%;
 
     --card: 0 0% 100%;
@@ -36,7 +36,7 @@
   }
 
   .dark {
-    --background: 0 0% 0%;
+    --background: 0 0% 10%;
     --foreground: 0 0% 98%;
 
     --card: 0 0% 3.9%;
@@ -76,14 +76,14 @@
   }
 }
 
-/* Custom styles for Baskerville */
+/* Custom styles for Playfair Display headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-baskerville);
+  font-family: var(--font-playfair);
   font-weight: 700;
 }
 
@@ -92,6 +92,5 @@ p,
 a,
 span,
 div {
-  font-family: var(--font-baskerville);
+  font-family: var(--font-inter);
 }
-

@@ -1,11 +1,17 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { GeistMono } from "geist/font/mono"
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { motion } from "framer-motion";
+import { GeistMono } from "geist/font/mono";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
+// Blog posts data - these should match the actual blog post pages in /app/blog
 const posts = [
+  {
+    date: "Feb 15, 2024",
+    title: "The Future of AI in Product Management",
+    slug: "future-of-ai-in-product-management",
+  },
   {
     date: "Feb 6, 2024",
     title: "AI, AGI, and the Future: Insights from the Last Two Weeks",
@@ -21,7 +27,7 @@ const posts = [
     title: "The Future of Product Management in AI-First Companies",
     slug: "product-management-ai-first",
   },
-]
+];
 
 export function Blog() {
   return (
@@ -38,14 +44,17 @@ export function Blog() {
             className="group flex items-center justify-between p-6 rounded-xl bg-zinc-900/50 hover:bg-zinc-900 transition-colors"
           >
             <div className="space-y-1">
-              <div className={`${GeistMono.className} text-sm text-zinc-500`}>{post.date}</div>
-              <h3 className="text-xl font-semibold group-hover:text-purple-400 transition-colors">{post.title}</h3>
+              <div className={`${GeistMono.className} text-sm text-zinc-500`}>
+                {post.date}
+              </div>
+              <h3 className="text-xl font-semibold group-hover:text-purple-400 transition-colors">
+                {post.title}
+              </h3>
             </div>
             <ArrowRight className="w-6 h-6 text-zinc-500 group-hover:text-purple-400 transition-colors transform group-hover:translate-x-1" />
           </Link>
         </motion.div>
       ))}
     </div>
-  )
+  );
 }
-

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Github, Linkedin } from "lucide-react";
 import { ChatInterface } from "@/components/chat-interface";
 import { Navigation } from "@/components/navigation";
@@ -12,39 +13,55 @@ import Link from "next/link";
 import { GeistMono } from "geist/font/mono";
 import { TypewriterEffect } from "@/components/typewriter-effect";
 import { ViewCounter } from "@/components/view-counter";
-
-import Avatar3D from "@/components/Avatar3D";
+import { FancySearchBar } from "@/components/fancy-search-bar";
+import { Creative } from "@/components/creative";
+import { ChatModal } from "@/components/chatmodal";
 
 export default function Home() {
   const words = [
-    "make stuff",
-    "play badminton",
-    "watch 'the office'",
-    "ship MVS",
+    " building cool projects",
+
+    " shipping MVPs",
+
+    " researching AI",
+
+    " hacking on ideas",
+
+    " playing badminton",
+
+    " watching 'The Office'",
+
+    " tinkering with tech",
   ];
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [initialQuestion, setInitialQuestion] = useState<string | undefined>(
+    undefined
+  );
+  const handleSend = (value: string) => {
+    setInitialQuestion(value);
+    setModalOpen(true);
+  };
 
   return (
     <div className="min-h-screen pt-20 lg:pt-32">
       <Navigation />
 
-      <main className="container mx-auto px-8 md:px-8 lg:px-[15vw] space-y-24">
+      <main className="container mx-auto px-8 md:px-8 space-y-24">
         {/* Hero Section */}
-        <div className="flex flex-col-reverse lg:flex-row gap-8 items-center lg:border-b-2">
-          <div className="space-y-4 max-w-2xl text-left">
-            <h1
-              className={`${GeistMono.className} text-4xl lg:text-5xl leading-tight`}
-            >
-              Hi,👋🏽 i am{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-violet-600">
-                Faiaz.
-              </span>{" "}
-              Software
-              <br />
-              developer,loves
-              <br />
-              to
-              <br />
-              <span>
+        <div className="flex flex-col-reverse lg:flex-row gap-8 items-center">
+          <div className="space-y-4 text-gray-300">
+            <h1 className="font-playfair text-5xl md:text-7xl leading-tight">
+              Hey there 👋🏽, I am Faiaz
+              <span className="inline-flex items-center ml-4 w-10 h-10 md:w-20 md:h-20">
+                <img
+                  src="/dp.png"
+                  alt="Faiaz Avatar"
+                  className="rounded-md object-cover bg-orange-100"
+                />
+              </span>
+              , a software engineer who loves 
+              <span className="ml-2 text-orange-300">
                 <TypewriterEffect words={words} />
               </span>
             </h1>
@@ -61,38 +78,31 @@ export default function Home() {
               </Link>
               <ViewCounter />
             </div>
+            {/* Chat interface */}
+            {/* <FancySearchBar onSend={handleSend} />
+            <ChatModal
+              isOpen={modalOpen}
+              onClose={() => setModalOpen(false)}
+              initialQuestion={initialQuestion}
+            /> */}
 
-            {/* Chat Interface */}
-            {/* <div className="mt-12 max-w-2xl">
-              <ChatInterface />
-              <div className="mt-4 space-y-2 text-zinc-400">
-                <p>What are your life goals?</p>
-                <p>What is something that you are proud of?</p>
-              </div>
-            </div> */}
-          </div>
-
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="w-[300px] lg:w-full">
-              <Avatar3D />
-            </div>
+            {/* Experience Section */}
+            <FadeIn>
+              <Timeline />
+            </FadeIn>
           </div>
         </div>
 
         {/* Projects Section */}
         <div className="space-y-12">
-        <h2 className={`${GeistMono.className} text-2xl font-bold`}> ~ my work</h2>
-
           <Projects />
         </div>
-
-        {/* Experience Section */}
-        <FadeIn>
-          <Timeline />
-        </FadeIn>
+        {/* <div>
+          <Creative />
+        </div> */}
 
         {/* Blog Section */}
-        {/* <FadeIn className="space-y-8">
+        <FadeIn className="space-y-8">
           <h2 className={`${GeistMono.className} text-2xl font-bold`}>
             ~ latest posts
           </h2>
