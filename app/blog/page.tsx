@@ -9,7 +9,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 const posts = [
   {
     date: "Oct 3, 2025",
-    title: "Opening the Blackbox of LLMs: My small research description",
+    title: "Opening the Blackbox of LLMs: My current research description",
     slug: "my-research-on-mechInterp",
     description:
       "An high level introduction on my current research on Mechanistic Interpretability",

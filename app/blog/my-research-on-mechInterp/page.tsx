@@ -17,7 +17,7 @@ export default function MyResearchOnMechInterp() {
         {/* Article Header */}
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Opening the Blackbox of LLMs: My small research description
+            Opening the Blackbox of LLMs: My current research description
           </h1>
           <p className="text-zinc-400">Published on October 3, 2025</p>
         </header>
