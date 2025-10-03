@@ -8,24 +8,9 @@ import { ArrowRight } from "lucide-react";
 // Blog posts data - these should match the actual blog post pages in /app/blog
 const posts = [
   {
-    date: "Feb 15, 2024",
-    title: "The Future of AI in Product Management",
-    slug: "future-of-ai-in-product-management",
-  },
-  {
-    date: "Feb 6, 2024",
-    title: "AI, AGI, and the Future: Insights from the Last Two Weeks",
-    slug: "ai-agi-future-insights",
-  },
-  {
-    date: "Jan 28, 2024",
-    title: "Building Modern Web Applications with Next.js",
-    slug: "building-modern-web-applications",
-  },
-  {
-    date: "Jan 15, 2024",
-    title: "The Future of Product Management in AI-First Companies",
-    slug: "product-management-ai-first",
+    date: "Oct 3, 2025",
+    title: "Opening the Blackbox of LLMs: My small research description",
+    slug: "my-research-on-mechInterp",
   },
 ];
 

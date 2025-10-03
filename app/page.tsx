@@ -61,7 +61,7 @@ export default function Home() {
                 />
               </span>
               , a software engineer who loves 
-              <span className="ml-2 text-orange-300">
+              <span className="ml-2 text-purple-400">
                 <TypewriterEffect words={words} />
               </span>
             </h1>
@@ -102,12 +102,12 @@ export default function Home() {
         </div> */}
 
         {/* Blog Section */}
-        {/* <FadeIn className="space-y-8">
+        <FadeIn className="space-y-8">
           <h2 className={`${GeistMono.className} text-2xl font-bold`}>
             ~ latest posts
           </h2>
           <Blog />
-        </FadeIn> */}
+        </FadeIn>
 
         {/* Skills Section */}
         {/* <FadeIn className="space-y-8">

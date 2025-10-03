@@ -8,33 +8,13 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 // Define blog posts data
 const posts = [
   {
-    date: "Feb 15, 2024",
-    title: "The Future of AI in Product Management",
-    slug: "future-of-ai-in-product-management",
+    date: "Oct 3, 2025",
+    title: "Opening the Blackbox of LLMs: My small research description",
+    slug: "my-research-on-mechInterp",
     description:
-      "Exploring how AI is transforming product management and what the future holds for product managers.",
+      "An high level introduction on my current research on Mechanistic Interpretability",
   },
-  {
-    date: "Feb 6, 2024",
-    title: "AI, AGI, and the Future: Insights from the Last Two Weeks",
-    slug: "ai-agi-future-insights",
-    description:
-      "A deep dive into recent developments in AI and AGI, and what they mean for the future of technology.",
-  },
-  {
-    date: "Jan 28, 2024",
-    title: "Building Modern Web Applications with Next.js",
-    slug: "building-modern-web-applications",
-    description:
-      "A comprehensive guide to building scalable and performant web applications using Next.js and modern tools.",
-  },
-  {
-    date: "Jan 15, 2024",
-    title: "The Future of Product Management in AI-First Companies",
-    slug: "product-management-ai-first",
-    description:
-      "How product management is evolving in companies that put AI at the center of their strategy.",
-  },
+  
 ];
 
 export default function BlogPage() {
@@ -53,7 +33,7 @@ export default function BlogPage() {
 
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Blog</h1>
           <p className="text-zinc-400 text-lg">
-            Thoughts on product management, software engineering, and AI
+            Just writing down my thoughts and summaries.
           </p>
         </div>
 
