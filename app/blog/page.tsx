@@ -48,7 +48,7 @@ export default function BlogPage() {
             >
               <Link
                 href={`/blog/${post.slug}`}
-                className="group block p-6 rounded-xl bg-zinc-900/50 hover:bg-zinc-900 transition-all hover:shadow-xl hover:shadow-purple-500/10"
+                className="group block p-6 rounded-xl bg-zinc-900/50 hover:bg-zinc-900 transition-all hover:shadow-xl hover:shadow-orange-500/10"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
@@ -57,14 +57,14 @@ export default function BlogPage() {
                     >
                       {post.date}
                     </div>
-                    <h3 className="text-2xl font-semibold group-hover:text-purple-400 transition-colors">
+                    <h3 className="text-2xl font-semibold group-hover:text-orange-400 transition-colors">
                       {post.title}
                     </h3>
                     <p className="text-zinc-400 line-clamp-2">
                       {post.description}
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-zinc-500 group-hover:text-purple-400 transition-all transform group-hover:translate-x-1 flex-shrink-0 mt-2" />
+                  <ArrowRight className="w-6 h-6 text-zinc-500 group-hover:text-orange-400 transition-all transform group-hover:translate-x-1 flex-shrink-0 mt-2" />
                 </div>
               </Link>
             </motion.div>

@@ -5,7 +5,7 @@ import { MapPin } from "lucide-react";
 import Image from "next/image";
 import { GeistMono } from "geist/font/mono";
 
-export function Timeline() {
+export function WorkExperience() {
   const experiences = [
     {
       title: "Software Engineer Intern @ Wayne Country Visitors Bureau",
@@ -84,7 +84,7 @@ export function Timeline() {
                 className="relative pr-2 md:grid md:grid-cols-[120px_1fr] md:gap-8"
               >
                 {/* Date */}
-                <div className={`text-blue-400 mb-4 md:mb-0 md:text-right`}>
+                <div className={`text-orange-400 mb-4 md:mb-0 md:text-right`}>
                   {exp.startDate}
                   <br />—<br />
                   {exp.endDate}
@@ -110,7 +110,7 @@ export function Timeline() {
                       {/* Department & Location */}
                       <div className="space-y-2">
                         <div className="text-[#ff7b4d]">
-                          <span className="text-blue-400 inline-flex items-center">
+                          <span className="text-sky-300 inline-flex items-center">
                             <p className="text-gray-400">
                               {exp.department} {" | "}
                             </p>
@@ -126,7 +126,7 @@ export function Timeline() {
                     {exp.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-4 py-1 rounded-full bg-violet-600/30 text-purple-300 shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-500/20"
+                        className="px-2 bg-orange-600/30 text-orange-200 shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-orange-500/20"
                       >
                         {tag}
                       </span>

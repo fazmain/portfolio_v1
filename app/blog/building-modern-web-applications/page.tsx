@@ -203,7 +203,7 @@ export default function BuildingModernWebApplications() {
                 href="https://www.linkedin.com/in/faiazmain/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300"
+                className="text-orange-400 hover:text-orange-300"
               >
                 LinkedIn
               </a>{" "}
@@ -212,7 +212,7 @@ export default function BuildingModernWebApplications() {
                 href="https://github.com/fazmain"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300"
+                className="text-orange-400 hover:text-orange-300"
               >
                 GitHub
               </a>

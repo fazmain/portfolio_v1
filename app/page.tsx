@@ -5,7 +5,7 @@ import { Github, Linkedin } from "lucide-react";
 import { ChatInterface } from "@/components/chat-interface";
 import { Navigation } from "@/components/navigation";
 import { Projects } from "@/components/projects";
-import { Timeline } from "@/components/timeline";
+import { WorkExperience } from "@/components/workExperience";
 import { Blog } from "@/components/blog";
 import { Skills } from "@/components/skills";
 import { FadeIn } from "@/components/fade-in";
@@ -23,7 +23,7 @@ export default function Home() {
 
     " shipping MVPs",
 
-    " researching AI",
+    " researching AI Safety",
 
     " hacking on ideas",
 
@@ -60,8 +60,8 @@ export default function Home() {
                   className="rounded-md object-cover bg-orange-100"
                 />
               </span>
-              , a software engineer who loves 
-              <span className="ml-2 text-purple-400">
+              , a software engineer who loves
+              <span className="ml-2 text-orange-300">
                 <TypewriterEffect words={words} />
               </span>
             </h1>
@@ -88,7 +88,7 @@ export default function Home() {
 
             {/* Experience Section */}
             <FadeIn>
-              <Timeline />
+              <WorkExperience />
             </FadeIn>
           </div>
         </div>
@@ -103,8 +103,10 @@ export default function Home() {
 
         {/* Blog Section */}
         <FadeIn className="space-y-8">
-          <h2 className={`${GeistMono.className} text-2xl font-bold`}>
-            ~ latest posts
+          <h2
+            className={`font-playfair text-4xl font-bold text-gray-300 leading-tight`}
+          >
+            Latest Posts{" "}
           </h2>
           <Blog />
         </FadeIn>

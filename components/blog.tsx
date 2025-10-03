@@ -32,11 +32,11 @@ export function Blog() {
               <div className={`${GeistMono.className} text-sm text-zinc-500`}>
                 {post.date}
               </div>
-              <h3 className="text-xl font-semibold group-hover:text-purple-400 transition-colors">
+              <h3 className="text-xl font-semibold group-hover:text-orange-400 transition-colors">
                 {post.title}
               </h3>
             </div>
-            <ArrowRight className="w-6 h-6 text-zinc-500 group-hover:text-purple-400 transition-colors transform group-hover:translate-x-1" />
+            <ArrowRight className="w-6 h-6 text-zinc-500 group-hover:text-orange-400 transition-colors transform group-hover:translate-x-1" />
           </Link>
         </motion.div>
       ))}
