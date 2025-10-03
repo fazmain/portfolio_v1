@@ -15,7 +15,7 @@ export function Navigation() {
         </Link>
 
         <div className="flex items-center gap-8 text-sm">
-          <Link
+          {/* <Link
             href="/journey"
             className="hover:text-zinc-400 transition-colors"
           >
@@ -27,18 +27,18 @@ export function Navigation() {
           >
             blog
           </Link>
-          {/* <Link
+          <Link
             href="/projects"
             className="hover:text-zinc-400 transition-colors"
           >
             projects
-          </Link> */}
+          </Link>
           <Link
             href="/resume"
             className="hover:text-zinc-400 transition-colors"
           >
             resume
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

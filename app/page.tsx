@@ -102,12 +102,12 @@ export default function Home() {
         </div> */}
 
         {/* Blog Section */}
-        <FadeIn className="space-y-8">
+        {/* <FadeIn className="space-y-8">
           <h2 className={`${GeistMono.className} text-2xl font-bold`}>
             ~ latest posts
           </h2>
           <Blog />
-        </FadeIn>
+        </FadeIn> */}
 
         {/* Skills Section */}
         {/* <FadeIn className="space-y-8">

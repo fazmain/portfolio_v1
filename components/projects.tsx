@@ -26,28 +26,28 @@ const projects = [
     year: "2023",
     title: "FeastFinder",
     description:
-      "A project about posture awareness using sensors and visual feedback.",
+      "A food and restaurant discovery platforn using Natural Langauge",
     image: "/images/feastfinder.png",
     category: "web-dev",
   },
   {
     year: "2023",
     title: "GangLyon",
-    description: "An AI-powered medical education platform.",
+    description: "Education platform for Medical Students",
     image: "/images/ganglyon.png",
     category: "web-dev",
   },
   {
     year: "2023",
     title: "Study Rooms",
-    description: "Collaborative learning spaces for students.",
+    description: "Finding study rooms on campus",
     image: "/images/studyrooms.png",
     category: "web-dev",
   },
   {
     year: "2023",
     title: "GPT Finder",
-    description: "AI assistant discovery platform.",
+    description: "Extension to bokmark ChatGPT conversations",
     image: "/images/gptfinder.jpeg",
     category: "tools",
   },
@@ -71,8 +71,7 @@ export function Projects() {
             Featured Projects
           </h2>
           <p className="text-gray-400 text-lg">
-            A collection of projects I've worked on, ranging from AI and machine
-            learning to web applications and educational platforms.
+            Things I am proud of building (more coming soon)
           </p>
 
           {/* Category Filter */}
