@@ -17,9 +17,14 @@ const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
 });
 
+// Configure metadata including favicon
 export const metadata: Metadata = {
   title: "Faiaz Azmain",
   description: "Personal website and portfolio",
+  icons: {
+    icon: "/dp.png",
+    apple: "/dp.png",
+  },
 };
 
 export default function RootLayout({
