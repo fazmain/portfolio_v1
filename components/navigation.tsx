@@ -20,19 +20,21 @@ export function Navigation() {
             className="hover:text-zinc-400 transition-colors"
           >
             the journey
-          </Link>
+          </Link> */}
           <Link
             href="/blog"
             className="hover:text-zinc-400 transition-colors"
           >
             blog
           </Link>
-          <Link
+          
+          {/* <Link
             href="/projects"
             className="hover:text-zinc-400 transition-colors"
           >
             projects
-          </Link>
+          </Link> */}
+          {/*
           <Link
             href="/resume"
             className="hover:text-zinc-400 transition-colors"

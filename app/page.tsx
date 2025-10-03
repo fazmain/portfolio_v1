@@ -76,7 +76,7 @@ export default function Home() {
               >
                 <Linkedin size={28} strokeWidth={1} />
               </Link>
-              <ViewCounter />
+              {/* <ViewCounter /> */}
             </div>
             {/* Chat interface */}
             {/* <FancySearchBar onSend={handleSend} />
