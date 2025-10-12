@@ -47,13 +47,13 @@ export default function Home() {
     <div className="min-h-screen pt-20 lg:pt-32">
       <Navigation />
 
-      <main className="container mx-auto px-8 md:px-8 space-y-24">
+      <main className="container mx-auto px-8 md:px-16 space-y-24">
         {/* Hero Section */}
         <div className="flex flex-col-reverse lg:flex-row gap-8 items-center">
           <div className="space-y-4 text-gray-300">
-            <h1 className="font-playfair text-5xl md:text-7xl leading-tight">
+            <h1 className="font-playfair text-5xl md:text-6xl leading-tight">
               Hey there 👋🏽, I am Faiaz
-              <span className="inline-flex items-center ml-4 w-10 h-10 md:w-20 md:h-20">
+              <span className="inline-flex items-center ml-4 w-10 h-10 md:w-16 md:h-16">
                 <img
                   src="/dp.png"
                   alt="Faiaz Avatar"
